@@ -3,7 +3,7 @@ services:
     - docker
 
 before_install:
-  - docker build -t twerthi/Docker-React -f Dockerfile.dev .
+  - docker build -t twerthi/docker-react -f Dockerfile.dev .
 
 script:
-    - docker run twerthi/Dock-React npm run test -- --coverage
+    - docker run twerthi/docker-react npm run test -- --coverage
